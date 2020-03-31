@@ -1,0 +1,27 @@
+.logo-font {
+  font-weight: bold;
+  font-size: 1.8rem;
+  & span {
+    color: $btn-color;
+  }
+}
+
+.nav-link {
+  font-size: 1.4rem;
+}
+
+.heading {
+  &-primary {
+    margin: 0;
+    line-height: 7.2rem;
+    font-size: 7rem;
+    font-weight: 900;
+  }
+
+  &-secondary {
+    margin: 0;
+    line-height: 3.2rem;
+    font-size: 2.1rem;
+    font-weight: 300;
+  }
+}

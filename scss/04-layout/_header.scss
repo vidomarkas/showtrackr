@@ -1,0 +1,19 @@
+.header {
+  height: 100vh;
+  position: relative;
+
+  &-container {
+    display: flex;
+  }
+  &-background {
+    position: absolute;
+    &--1 {
+      top: 0;
+      right: 0;
+    }
+    &--2 {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

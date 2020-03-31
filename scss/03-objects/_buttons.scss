@@ -1,0 +1,19 @@
+.btn {
+  cursor: pointer;
+  &-primary {
+    background-color: $btn-color;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  &-cta {
+    box-shadow: 0 2px 4px #3c09b354;
+    &:hover {
+      background-color: $btn-color-hover;
+    }
+  }
+}

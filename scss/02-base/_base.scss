@@ -1,0 +1,22 @@
+*,
+*:before,
+*:after {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 110.8rem;
+  margin: 0 auto;
+}
