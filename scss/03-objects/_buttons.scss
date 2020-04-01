@@ -1,5 +1,10 @@
 .btn {
   cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: $btn-color-hover;
+  }
   &-primary {
     background-color: $btn-color;
     color: #fff;
@@ -12,8 +17,5 @@
 
   &-cta {
     box-shadow: 0 2px 4px #3c09b354;
-    &:hover {
-      background-color: $btn-color-hover;
-    }
   }
 }

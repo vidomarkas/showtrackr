@@ -1,0 +1,38 @@
+.subscribe-form {
+  position: relative;
+  width: 45rem;
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+  &__label {
+    position: absolute;
+    left: 0.9rem;
+    top: 0.8rem;
+    color: #540cfa;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__field {
+    height: 5.3rem;
+    width: 30.9rem;
+    border: 0.05rem solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding-top: 2.3rem;
+    padding-left: 0.9rem;
+    font-size: 1.6rem;
+
+    &::placeholder {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 5.3rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 14.1rem;
+  }
+}

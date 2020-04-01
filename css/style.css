@@ -394,6 +394,11 @@ body {
 
 .btn {
   cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #380aa4;
 }
 
 .btn-primary {
@@ -469,6 +474,7 @@ nav {
 
 .header-background {
   position: absolute;
+  z-index: -1;
 }
 
 .header-background--1 {
@@ -479,5 +485,101 @@ nav {
 .header-background--2 {
   bottom: 0;
   left: 0;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+}
+
+.header-left {
+  margin-top: 19.4rem;
+}
+
+.header-right {
+  margin-top: 8.5rem;
+}
+
+.header-secondary {
+  margin-top: 2.94rem;
+}
+
+.header-form {
+  margin-top: 2.56rem;
+}
+
+.compatible-with {
+  margin-top: 13rem;
+}
+
+.compatible-with__text {
+  text-transform: uppercase;
+  color: #979797;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.compatible-with__shield {
+  opacity: 0.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.compatible-with__icon {
+  margin-right: 3.75rem;
+}
+
+.subscribe-form {
+  position: relative;
+  width: 45rem;
+  -webkit-box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+}
+
+.subscribe-form__label {
+  position: absolute;
+  left: 0.9rem;
+  top: 0.8rem;
+  color: #540cfa;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.subscribe-form__field {
+  height: 5.3rem;
+  width: 30.9rem;
+  border: 0.05rem solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding-top: 2.3rem;
+  padding-left: 0.9rem;
+  font-size: 1.6rem;
+}
+
+.subscribe-form__field::-webkit-input-placeholder {
+  font-size: 1.6rem;
+}
+
+.subscribe-form__field:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+
+.subscribe-form__field::-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+
+.subscribe-form__field::placeholder {
+  font-size: 1.6rem;
+}
+
+.subscribe-form__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 5.3rem;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 14.1rem;
 }
 /*# sourceMappingURL=style.css.map */
