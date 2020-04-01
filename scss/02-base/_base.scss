@@ -20,3 +20,10 @@ body {
   max-width: 110.8rem;
   margin: 0 auto;
 }
+
+.section {
+  &__heading-box {
+    max-width: 61rem;
+    margin: 0 auto;
+  }
+}

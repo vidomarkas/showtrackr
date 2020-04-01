@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
@@ -26,7 +31,7 @@
         </div>
       </div>
     </nav>
-    <section class="header">
+    <header class="header">
       <img
         class="header-background header-background--1"
         src="./img/headerbackground1.svg"
@@ -43,10 +48,10 @@
             <h1 class="heading-primary header-primary"
               >Track your shows automatically</h1
             >
-            <h2 class="heading-secondary header-secondary"
+            <p class="header-text header-secondary"
               >With ShowTrackr you can track your favorite TV shows
               automatically, so you never loose track of your TV shows ever
-              again. 🍿</h2
+              again. 🍿</p
             >
             <form action="" class="subscribe-form header-form">
               <label class="subscribe-form__label" for="email">Email</label>
@@ -101,6 +106,75 @@
           <img src="./img/iphone-x-mockup.png" alt="" />
         </div>
       </div>
+    </header>
+    <section class="features">
+      <div class="section__heading-box">
+        <h3 class="heading-light">Features</h3>
+        <h2 class="heading-secondary">Built and customized for your habits </h2>
+        <p class="text"
+          >ShowTrackr’s built-in machine learning and context-aware features
+          guarantee that all the notifications and recommendations are always
+          delivered to you in the perfect moment.</p
+        >
+      </div>
+      <div class="features-container">
+        <div class="feature">
+          <img src="./img/autotracking.svg" alt="automated tracking" />
+          <h4 class="feature-heading">Automated tracking</h4>
+          <p class="feature-text"
+            >Track your favorite shows automatically without switching between
+            apps.</p
+          >
+          <a href="#" class="feature-link"
+            ><span>Learn more</span> <img src="./img/arrow-right.svg" />
+          </a>
+        </div>
+
+        <div class="feature">
+          <img src="./img/machinelearn.svg" alt="Machine learning" />
+          <h4 class="feature-heading">Machine learning</h4>
+          <p class="feature-text"
+            >Get recommendations like never before, which are truly customized
+            for your taste.</p
+          >
+          <a href="#" class="feature-link"
+            ><span>Learn more</span> <img src="./img/arrow-right.svg" />
+          </a>
+        </div>
+        <div class="feature">
+          <img src="./img/smartnotsvg.svg" alt="Smart notifications" />
+          <h4 class="feature-heading">Smart notifications</h4>
+          <p class="feature-text"
+            >Receive smart notifications exactly at the right moments when you
+            need them.</p
+          >
+          <a href="#" class="feature-link"
+            ><span>Learn more</span> <img src="./img/arrow-right.svg" />
+          </a>
+        </div>
+      </div>
     </section>
+    <div class="slider">
+      <img src="./img/shows/img1.png" alt="" />
+      <img src="./img/shows/img2.png" alt="" />
+      <img src="./img/shows/img3.png" alt="" />
+      <img src="./img/shows/img4.png" alt="" />
+      <img src="./img/shows/img5.png" alt="" />
+      <img src="./img/shows/img6.png" alt="" />
+      <img src="./img/shows/img7.png" alt="" />
+    </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

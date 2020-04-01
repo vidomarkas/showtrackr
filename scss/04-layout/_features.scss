@@ -1,0 +1,13 @@
+.features {
+  margin-top: 16rem;
+  text-align: center;
+  &-container {
+    margin-top: 7.66rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.feature {
+  max-width: 30rem;
+}

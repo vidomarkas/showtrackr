@@ -2,6 +2,8 @@
 
 @import "01-config/variables";
 
+@import "01-config/slick";
+
 @import "02-base/base";
 
 @import "02-base/typography";
@@ -11,5 +13,7 @@
 @import "04-layout/navigation";
 
 @import "04-layout/header";
+
+@import "04-layout/features";
 
 @import "05-components/subscribe-form";
