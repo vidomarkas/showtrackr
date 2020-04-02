@@ -1,6 +1,7 @@
 .subscribe-form {
   position: relative;
   width: 45rem;
+  height: 5.3rem;
   box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
   &__label {
     position: absolute;
@@ -9,9 +10,13 @@
     color: #540cfa;
     font-weight: bold;
     font-size: 1.2rem;
+    z-index: 1;
   }
 
   &__field {
+    position: absolute;
+    left: 0;
+    top: 0;
     height: 5.3rem;
     width: 30.9rem;
     border: 0.05rem solid rgba(0, 0, 0, 0.05);

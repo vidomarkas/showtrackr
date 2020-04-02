@@ -1,3 +1,25 @@
 .community {
   background-color: #000;
+
+  &-container {
+    display: flex;
+  }
+
+  &-left {
+    padding-top: 20rem;
+    max-width: 46rem;
+    margin-right: 10rem;
+  }
+
+  &-tertiary {
+    margin-bottom: 2.58rem;
+  }
+
+  &-text {
+    margin-bottom: 2.68rem;
+  }
+
+  &-feed {
+    margin-right: 2rem;
+  }
 }

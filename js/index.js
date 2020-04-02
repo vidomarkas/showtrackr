@@ -53,3 +53,5 @@ tab3.addEventListener("click", () => {
   tab2.classList.remove("interfaces-tab--active");
   console.log("tab3");
 });
+
+AOS.init();

@@ -20,9 +20,10 @@ nav {
     &--bold {
       font-weight: bold;
     }
-  }
 
-  &-logo {
+    a {
+      color: #000;
+    }
   }
 
   &-list {

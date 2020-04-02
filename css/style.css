@@ -362,6 +362,7 @@ template {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -398,6 +399,10 @@ body {
   font-size: 1.8rem;
 }
 
+.heading-light--white {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .heading-primary {
   margin: 0;
   line-height: 7.2rem;
@@ -419,6 +424,10 @@ body {
   font-weight: bold;
 }
 
+.heading-tertiary--white {
+  color: #fff;
+}
+
 .features-text {
   font-weight: 400;
   font-size: 2.1rem;
@@ -429,6 +438,10 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.8rem;
+}
+
+.smaller-text--white {
+  color: #fff;
 }
 
 .bigger-text {
@@ -465,6 +478,13 @@ body {
   vertical-align: -1px;
 }
 
+.footnote {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 2.9rem;
+  opacity: 0.3;
+}
+
 .btn {
   cursor: pointer;
   border: none;
@@ -479,10 +499,14 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 1.4rem;
-  padding: 8px 18px;
+  padding: 0.8rem 1.8rem;
   border-radius: 4px;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
+}
+
+.btn-community {
+  padding: 1rem 2.5rem;
 }
 
 .btn-cta {
@@ -519,6 +543,10 @@ nav {
 
 .nav-link--bold {
   font-weight: bold;
+}
+
+.nav-link a {
+  color: #000;
 }
 
 .nav-list {
@@ -559,6 +587,8 @@ nav {
 
 .header-left {
   margin-top: 19.4rem;
+  margin-right: 12.3rem;
+  max-width: 57rem;
 }
 
 .header-right {
@@ -675,9 +705,68 @@ nav {
   background-color: #000;
 }
 
+.community-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.community-left {
+  padding-top: 20rem;
+  max-width: 46rem;
+  margin-right: 10rem;
+}
+
+.community-tertiary {
+  margin-bottom: 2.58rem;
+}
+
+.community-text {
+  margin-bottom: 2.68rem;
+}
+
+.community-feed {
+  margin-right: 2rem;
+}
+
+.get-started {
+  padding-top: 13.8rem;
+  text-align: center;
+}
+
+.get-started-form.subscribe-form {
+  margin-top: 4.66rem;
+  margin-bottom: 12rem;
+}
+
+.get-started-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 11.7rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 2.8rem;
+}
+
+.get-started-icon {
+  cursor: pointer;
+  opacity: 0.2;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.get-started-icon:hover {
+  opacity: 1;
+}
+
 .subscribe-form {
   position: relative;
   width: 45rem;
+  height: 5.3rem;
   -webkit-box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
 }
@@ -689,9 +778,13 @@ nav {
   color: #540cfa;
   font-weight: bold;
   font-size: 1.2rem;
+  z-index: 1;
 }
 
 .subscribe-form__field {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 5.3rem;
   width: 30.9rem;
   border: 0.05rem solid rgba(0, 0, 0, 0.05);
@@ -727,5 +820,9 @@ nav {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   width: 14.1rem;
+}
+
+.u-align-center {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

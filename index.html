@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Show Trackr</title>
   </head>
   <body>
@@ -21,9 +21,9 @@
       <div class="container nav">
         <div class="nav-logo logo-font">Show<span>Trackr</span></div>
         <ul class="nav-list  ">
-          <li class="nav-link">Features</li>
-          <li class="nav-link">Community</li>
-          <li class="nav-link">Get Started</li>
+          <li class="nav-link"><a href="#Features">Features</a></li>
+          <li class="nav-link"><a href="#Community">Community</a></li>
+          <li class="nav-link"><a href="#Get Started">Get Started</a></li>
         </ul>
         <div class="nav-list ">
           <div class="nav-link nav-link--bold">Log in</div>
@@ -42,7 +42,7 @@
         src="./img/headerbackground2.png"
         alt=""
       />
-      <div class="container header-container">
+      <div class="container header-container ">
         <div class="header-left">
           <div>
             <h1 class="heading-primary header-primary"
@@ -61,6 +61,7 @@
                 name="email"
                 id=""
                 placeholder="your@email.com"
+                required
               />
               <input
                 type="submit"
@@ -73,27 +74,47 @@
             <p class="compatible-with__text">Compatible with</p>
             <ul class="compatible-with__shield">
               <li
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="1300"
+                data-aos-offset="0"
                 ><img
                   class="compatible-with__icon"
                   src="./img/netflix.png"
                   alt=""
               /></li>
               <li
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="1600"
+                data-aos-offset="0"
                 ><img class="compatible-with__icon" src="./img/apple.svg" alt=""
               /></li>
               <li
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="1900"
+                data-aos-offset="0"
                 ><img
                   class="compatible-with__icon"
                   src="./img/android.svg"
                   alt=""
               /></li>
               <li
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="2200"
+                data-aos-offset="0"
                 ><img
                   class="compatible-with__icon"
                   src="./img/windows.svg"
                   alt=""
               /></li>
               <li
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="2500"
+                data-aos-offset="0"
                 ><img
                   class="compatible-with__icon"
                   src="./img/synology.svg"
@@ -102,12 +123,17 @@
             </ul>
           </div>
         </div>
-        <div class="header-right">
+        <div
+          class="header-right"
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <img src="./img/iphone-x-mockup.png" alt="" />
         </div>
       </div>
     </header>
-    <section class="features">
+    <section id="Features" class="features">
       <div class="section__heading-box">
         <h2 class="heading-light">Features</h2>
         <h3 class="heading-secondary">Built and customized for your habits </h3>
@@ -118,7 +144,13 @@
         >
       </div>
       <div class="features-container">
-        <div class="feature">
+        <div
+          class="feature"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
           <img src="./img/autotracking.svg" alt="automated tracking" />
           <h4 class="feature-heading">Automated tracking</h4>
           <p class="feature-text"
@@ -130,7 +162,13 @@
           </a>
         </div>
 
-        <div class="feature">
+        <div
+          class="feature"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="600"
+          data-aos-offset="0"
+        >
           <img src="./img/machinelearn.svg" alt="Machine learning" />
           <h4 class="feature-heading">Machine learning</h4>
           <p class="feature-text"
@@ -141,7 +179,13 @@
             ><span>Learn more</span> <img src="./img/arrow-right.svg" />
           </a>
         </div>
-        <div class="feature">
+        <div
+          class="feature"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="900"
+          data-aos-offset="0"
+        >
           <img src="./img/smartnotsvg.svg" alt="Smart notifications" />
           <h4 class="feature-heading">Smart notifications</h4>
           <p class="feature-text"
@@ -207,49 +251,94 @@
         </div>
       </div>
     </section>
-    <section class="community">
-      <div class="container ">
+    <!-- ------------------------------------------------------------------ -->
+    <section id="Community" class="community">
+      <div class="container community-container ">
         <div class="community-left">
-          <h3 class="heading-tertiary"
-            >Easy-to-use interfaces on every platform</h3
+          <h2 class="heading-light heading-light--white">Community</h2>
+          <h3
+            class="heading-tertiary heading-tertiary--white community-tertiary"
+            >We believe in the power of community</h3
           >
-          <p class="smaller-text"
-            >Since most of our features work in a completely automated way, you
-            will mainly use our apps to discover new TV shows recommended for
-            you and discuss the most interesting episodes with like-minded
-            people.</p
+          <p class="smaller-text smaller-text--white community-text"
+            >Our goal is to create a product and service that you’re satisfied
+            with and use it every day. This is why we’re constantly working on
+            our services to make it better every day and really listen to what
+            our users has to say.</p
           >
-          <div>
-            <div id="tab1" class="interfaces-tab interfaces-tab--active">
-              <img src="./img/dashboard.svg" alt="Customized Dashboard" />
-              <span>Customized Dashboard</span>
-            </div>
-            <div id="tab2" class="interfaces-tab ">
-              <img
-                src="./img/night-mode.svg"
-                alt="Automatic Day & Night Modes"
-              />
-              <span>Automatic Day & Night Modes</span>
-            </div>
-            <div id="tab3" class="interfaces-tab ">
-              <img src="./img/chat.svg" alt="Integrated Chat Platform" />
-              <span>Integrated Chat Platform</span>
-            </div>
-          </div>
+          <button class="btn btn-primary btn-community"
+            >Read more testimonials</button
+          >
         </div>
         <div class="community-right">
-          <img
-            class="interfaces-phone-img"
-            src="./img/iphone-x-mockup.png"
-            alt=""
-          />
+          <img class="community-feed" src="./img/feed1.png" alt="" />
+          <img src="./img/feed2.png" alt="" />
         </div>
       </div>
+    </section>
+    <section id="Get Started" class="get-started">
+      <div
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-duration="1000"
+        data-aos-offset="0"
+      >
+        <div class="section__heading-box">
+          <h2 class="heading-light">Get Started</h2>
+          <h3 class="heading-secondary"
+            >Start tracking your TV shows for free
+          </h3>
+          <p class="features-text"
+            >In order to start tracking your TV shows, all you have to do is
+            enter your email address. Everything else will be taken care of by
+            us. All you have to do is sit back, relax and enjoy your TV
+            shows.</p
+          >
+        </div>
+        <div>
+          <form
+            action=""
+            class="subscribe-form u-align-center get-started-form"
+          >
+            <label class="subscribe-form__label" for="email">Email</label>
+            <input
+              class="subscribe-form__field"
+              type="email"
+              name="email"
+              id=""
+              placeholder="your@email.com"
+              required
+            />
+            <input
+              type="submit"
+              class="subscribe-form__btn btn btn-primary"
+              value="Start tracking"
+            />
+          </form>
+        </div>
+      </div>
+
+      <ul class="get-started-social">
+        <li class="get-started-icon">
+          <img src="./img/twitter.svg" alt="" />
+        </li>
+        <li class="get-started-icon">
+          <img src="./img/facebook.svg" alt="" />
+        </li>
+        <li class="get-started-icon">
+          <img src="./img/youtube.svg" alt="" />
+        </li>
+      </ul>
+      <p class="footnote"
+        >Designed by Daniel Korpai. Implemented by
+        <a href="https://vdomarkas.com">Viktoras Domarkas</a></p
+      >
     </section>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
