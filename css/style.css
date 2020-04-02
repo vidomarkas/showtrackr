@@ -348,6 +348,7 @@ template {
 
 .slider {
   margin-top: 13.76rem;
+  margin-bottom: 14rem;
 }
 
 *,
@@ -411,13 +412,26 @@ body {
   font-weight: 900;
 }
 
-.text {
+.heading-tertiary {
+  margin: 0;
+  line-height: 4.6rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.features-text {
   font-weight: 400;
   font-size: 2.1rem;
   line-height: 3.2rem;
 }
 
-.header-text {
+.smaller-text {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.bigger-text {
   margin: 0;
   line-height: 3.2rem;
   font-size: 2.1rem;
@@ -601,6 +615,64 @@ nav {
 
 .feature {
   max-width: 30rem;
+}
+
+.interfaces {
+  position: relative;
+}
+
+.interfaces-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.interfaces-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14rem;
+}
+
+.interfaces-left {
+  max-width: 46rem;
+  margin-top: 7.7rem;
+}
+
+.interfaces-right {
+  margin-left: 10rem;
+}
+
+.interfaces-tab {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 1.7rem;
+  padding-left: 1.8rem;
+  opacity: 0.5;
+  cursor: pointer;
+  outline: none;
+}
+
+.interfaces-tab img {
+  margin-right: 1.6rem;
+  vertical-align: -4px;
+}
+
+.interfaces-tab--active {
+  -webkit-box-shadow: 0 1px 3px #97979734;
+          box-shadow: 0 1px 3px #97979734;
+  opacity: 1;
+}
+
+.interfaces-phone-img {
+  margin-top: 15.4rem;
+  width: 26.5rem;
+}
+
+.community {
+  background-color: #000;
 }
 
 .subscribe-form {
