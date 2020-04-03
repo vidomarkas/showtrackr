@@ -1,23 +1,38 @@
 .interfaces {
   position: relative;
+
   &-background {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
+
+    @include maxw(1084) {
+      display: none;
+    }
   }
 
   &-container {
     display: flex;
     margin-bottom: 14rem;
+    @include maxw(1084) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-left {
     max-width: 46rem;
     margin-top: 7.7rem;
+    @include maxw(1084) {
+      margin-top: 0;
+    }
   }
   &-right {
     margin-left: 10rem;
+    @include maxw(1084) {
+      margin-left: 0;
+    }
   }
 
   &-tab {

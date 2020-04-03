@@ -1,6 +1,7 @@
 .btn {
   cursor: pointer;
   border: none;
+  white-space: nowrap;
 
   &:hover {
     background-color: $btn-color-hover;

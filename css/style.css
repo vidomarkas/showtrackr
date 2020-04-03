@@ -370,8 +370,12 @@ body {
   color: #000;
 }
 
+ul {
+  padding: 0;
+}
+
 .container {
-  width: 100%;
+  width: 80%;
   max-width: 110.8rem;
   margin: 0 auto;
 }
@@ -488,6 +492,7 @@ body {
 .btn {
   cursor: pointer;
   border: none;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -535,6 +540,13 @@ nav {
 .nav-link {
   cursor: pointer;
   margin: 0 60px 0 60px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1084px) {
+  .nav-link {
+    display: none;
+  }
 }
 
 .nav-link:last-of-type {
@@ -568,6 +580,18 @@ nav {
   display: flex;
 }
 
+@media (max-width: 1084px) {
+  .header-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header-background {
   position: absolute;
   z-index: -1;
@@ -591,6 +615,13 @@ nav {
   max-width: 57rem;
 }
 
+@media (max-width: 1084px) {
+  .header-left {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
 .header-right {
   margin-top: 8.5rem;
 }
@@ -600,8 +631,22 @@ nav {
   max-width: 47.1rem;
 }
 
+@media (max-width: 1084px) {
+  .header-secondary {
+    margin: 0 auto;
+    margin-top: 2.94rem;
+  }
+}
+
 .header-form {
   margin-top: 2.56rem;
+}
+
+@media (max-width: 1084px) {
+  .header-form {
+    margin: 0 auto;
+    margin-top: 2.56rem;
+  }
 }
 
 .compatible-with {
@@ -643,8 +688,27 @@ nav {
           justify-content: space-evenly;
 }
 
+@media (max-width: 1084px) {
+  .features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .feature {
   max-width: 30rem;
+}
+
+@media (max-width: 1084px) {
+  .feature {
+    text-align: left;
+    margin-bottom: 4.76rem;
+  }
 }
 
 .interfaces {
@@ -658,6 +722,12 @@ nav {
   z-index: -1;
 }
 
+@media (max-width: 1084px) {
+  .interfaces-background {
+    display: none;
+  }
+}
+
 .interfaces-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,13 +735,37 @@ nav {
   margin-bottom: 14rem;
 }
 
+@media (max-width: 1084px) {
+  .interfaces-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .interfaces-left {
   max-width: 46rem;
   margin-top: 7.7rem;
 }
 
+@media (max-width: 1084px) {
+  .interfaces-left {
+    margin-top: 0;
+  }
+}
+
 .interfaces-right {
   margin-left: 10rem;
+}
+
+@media (max-width: 1084px) {
+  .interfaces-right {
+    margin-left: 0;
+  }
 }
 
 .interfaces-tab {
@@ -703,6 +797,8 @@ nav {
 
 .community {
   background-color: #000;
+  height: 80rem;
+  overflow: hidden;
 }
 
 .community-container {
@@ -717,16 +813,22 @@ nav {
   margin-right: 10rem;
 }
 
+@media (max-width: 1084px) {
+  .community-left {
+    padding-top: 5rem;
+  }
+}
+
+.community-right {
+  position: relative;
+}
+
 .community-tertiary {
   margin-bottom: 2.58rem;
 }
 
 .community-text {
   margin-bottom: 2.68rem;
-}
-
-.community-feed {
-  margin-right: 2rem;
 }
 
 .get-started {
@@ -820,6 +922,75 @@ nav {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   width: 14.1rem;
+}
+
+.tweet {
+  width: 26rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.tweet-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.62rem;
+}
+
+.tweet-logo {
+  border-radius: 50%;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-right: 0.8rem;
+  overflow: hidden;
+}
+
+.tweet-name {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.tweet-body {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #ffffff;
+  margin-bottom: 3.28rem;
+  opacity: 0.8;
+}
+
+.tweet-date {
+  color: #979797;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.twitter-logo {
+  position: absolute;
+  top: 2.6rem;
+  right: 1.5rem;
+  display: inline;
+  opacity: 0.3;
+}
+
+.feed {
+  margin-right: 2rem;
+  position: absolute;
+  top: -8.6rem;
+}
+
+.feed2 {
+  margin-right: 2rem;
+  position: absolute;
+  top: -12.6rem;
+  left: 28rem;
 }
 
 .u-align-center {

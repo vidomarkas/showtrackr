@@ -1,3 +1,5 @@
+@import "01-config/mixins";
+
 @import "01-config/normalize";
 
 @import "01-config/variables";
@@ -23,5 +25,7 @@
 @import "04-layout/get-started";
 
 @import "05-components/subscribe-form";
+
+@import "05-components/tweet";
 
 @import "06-utilities/utilities";

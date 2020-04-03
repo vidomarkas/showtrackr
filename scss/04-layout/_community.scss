@@ -1,5 +1,7 @@
 .community {
   background-color: #000;
+  height: 80rem;
+  overflow: hidden;
 
   &-container {
     display: flex;
@@ -9,6 +11,13 @@
     padding-top: 20rem;
     max-width: 46rem;
     margin-right: 10rem;
+    @include maxw(1084) {
+      padding-top: 5rem;
+    }
+  }
+
+  &-right {
+    position: relative;
   }
 
   &-tertiary {
@@ -17,9 +26,5 @@
 
   &-text {
     margin-bottom: 2.68rem;
-  }
-
-  &-feed {
-    margin-right: 2rem;
   }
 }

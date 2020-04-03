@@ -5,9 +5,17 @@
     margin-top: 7.66rem;
     display: flex;
     justify-content: space-evenly;
+    @include maxw(1084) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
 .feature {
   max-width: 30rem;
+  @include maxw(1084) {
+    text-align: left;
+    margin-bottom: 4.76rem;
+  }
 }

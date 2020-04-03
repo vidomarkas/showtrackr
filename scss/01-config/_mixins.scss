@@ -1,0 +1,12 @@
+// Screen with max width
+@mixin maxw($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}
+// Screen between min & max
+@mixin minmaxw($min, $max) {
+  @media screen and (min-width: $min+"px") and (max-width: $max+"px") {
+    @content;
+  }
+}

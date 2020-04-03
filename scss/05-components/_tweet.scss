@@ -1,0 +1,64 @@
+.tweet {
+  width: 26rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+
+  &-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.62rem;
+  }
+
+  &-logo {
+    border-radius: 50%;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-right: 0.8rem;
+    overflow: hidden;
+  }
+
+  &-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  &-body {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #ffffff;
+    margin-bottom: 3.28rem;
+    opacity: 0.8;
+  }
+
+  &-date {
+    color: #979797;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+
+.twitter-logo {
+  position: absolute;
+  top: 2.6rem;
+  right: 1.5rem;
+  display: inline;
+  opacity: 0.3;
+}
+
+.feed {
+  margin-right: 2rem;
+  position: absolute;
+  top: -8.6rem;
+}
+
+.feed2 {
+  margin-right: 2rem;
+  position: absolute;
+  top: -12.6rem;
+  left: 28rem;
+}
