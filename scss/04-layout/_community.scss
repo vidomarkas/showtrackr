@@ -5,6 +5,10 @@
 
   &-container {
     display: flex;
+    @include maxw(1248) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   &-left {
@@ -13,6 +17,9 @@
     margin-right: 10rem;
     @include maxw(1084) {
       padding-top: 5rem;
+      margin-right: 0;
+      margin: 0 auto;
+      margin-bottom: 5rem;
     }
   }
 

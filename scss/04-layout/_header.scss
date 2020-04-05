@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  overflow: hidden;
 
   &-container {
     display: flex;
@@ -10,15 +11,26 @@
   }
   &-background {
     position: absolute;
+
     z-index: -1;
     &--1 {
-      top: 0;
-      right: 0;
+      top: -205px;
+      right: -582px;
+
+      @include maxw(1084) {
+        top: 426px;
+        right: -501px;
+        transform: scale(0.6);
+      }
     }
     &--2 {
       bottom: 0;
       left: 0;
       transform: translateY(25%);
+
+      @include maxw(1084) {
+        bottom: 15px;
+      }
     }
   }
 
@@ -30,6 +42,7 @@
     @include maxw(1084) {
       text-align: center;
       margin-right: 0;
+      margin-top: 3.88rem;
     }
   }
 

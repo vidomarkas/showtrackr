@@ -1,6 +1,9 @@
 .get-started {
   padding-top: 13.8rem;
   text-align: center;
+  @include maxw(1248) {
+    padding: 1.6rem;
+  }
 
   &-form.subscribe-form {
     margin-top: 4.66rem;

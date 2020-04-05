@@ -6,6 +6,16 @@
   border-radius: 10px;
   margin-bottom: 2rem;
 
+  @include maxw(1248) {
+    display: inline-block;
+    height: 21.1rem;
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+    margin-bottom: 0;
+    vertical-align: top;
+    position: relative;
+  }
+
   &-heading {
     display: flex;
     align-items: center;
@@ -33,12 +43,20 @@
     color: #ffffff;
     margin-bottom: 3.28rem;
     opacity: 0.8;
+    @include maxw(1248) {
+      white-space: normal;
+    }
   }
 
   &-date {
     color: #979797;
     font-size: 1.2rem;
     font-weight: 400;
+    @include maxw(1248) {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+    }
   }
 }
 
@@ -54,6 +72,13 @@
   margin-right: 2rem;
   position: absolute;
   top: -8.6rem;
+
+  @include maxw(1248) {
+    top: 2rem;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+  }
 }
 
 .feed2 {
@@ -61,4 +86,8 @@
   position: absolute;
   top: -12.6rem;
   left: 28rem;
+  display: block;
+  @include maxw(1248) {
+    display: none;
+  }
 }

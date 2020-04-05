@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $(".slider").slick({
     centerMode: true,
     centerPadding: "60px",
@@ -15,8 +15,8 @@ $(document).ready(function() {
           arrows: false,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 5
-        }
+          slidesToShow: 5,
+        },
       },
       {
         breakpoint: 480,
@@ -24,10 +24,10 @@ $(document).ready(function() {
           arrows: false,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
 

@@ -409,9 +409,19 @@ ul {
 
 .heading-primary {
   margin: 0;
-  line-height: 7.2rem;
-  font-size: 7rem;
+  line-height: 4.8rem;
+  font-size: 4.2rem;
   font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .heading-primary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 
 .heading-secondary {
@@ -453,6 +463,13 @@ ul {
   line-height: 3.2rem;
   font-size: 2.1rem;
   font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .bigger-text {
+    line-height: 2.7rem;
+    font-size: 1.8rem;
+  }
 }
 
 .feature-heading {
@@ -521,10 +538,10 @@ ul {
 
 nav {
   border-bottom: 1px solid #97979736;
+  background-color: #fff;
 }
 
 .nav {
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,6 +589,7 @@ nav {
 
 .header {
   position: relative;
+  overflow: hidden;
 }
 
 .header-container {
@@ -598,8 +616,17 @@ nav {
 }
 
 .header-background--1 {
-  top: 0;
-  right: 0;
+  top: -205px;
+  right: -582px;
+}
+
+@media (max-width: 1084px) {
+  .header-background--1 {
+    top: 426px;
+    right: -501px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
 }
 
 .header-background--2 {
@@ -607,6 +634,12 @@ nav {
   left: 0;
   -webkit-transform: translateY(25%);
           transform: translateY(25%);
+}
+
+@media (max-width: 1084px) {
+  .header-background--2 {
+    bottom: 15px;
+  }
 }
 
 .header-left {
@@ -619,6 +652,7 @@ nav {
   .header-left {
     text-align: center;
     margin-right: 0;
+    margin-top: 3.88rem;
   }
 }
 
@@ -807,6 +841,16 @@ nav {
   display: flex;
 }
 
+@media (max-width: 1248px) {
+  .community-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .community-left {
   padding-top: 20rem;
   max-width: 46rem;
@@ -816,6 +860,9 @@ nav {
 @media (max-width: 1084px) {
   .community-left {
     padding-top: 5rem;
+    margin-right: 0;
+    margin: 0 auto;
+    margin-bottom: 5rem;
   }
 }
 
@@ -834,6 +881,12 @@ nav {
 .get-started {
   padding-top: 13.8rem;
   text-align: center;
+}
+
+@media (max-width: 1248px) {
+  .get-started {
+    padding: 1.6rem;
+  }
 }
 
 .get-started-form.subscribe-form {
@@ -871,6 +924,12 @@ nav {
   height: 5.3rem;
   -webkit-box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1248px) {
+  .subscribe-form {
+    width: 34.3rem;
+  }
 }
 
 .subscribe-form__label {
@@ -933,6 +992,18 @@ nav {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 1248px) {
+  .tweet {
+    display: inline-block;
+    height: 21.1rem;
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+    margin-bottom: 0;
+    vertical-align: top;
+    position: relative;
+  }
+}
+
 .tweet-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -966,10 +1037,24 @@ nav {
   opacity: 0.8;
 }
 
+@media (max-width: 1248px) {
+  .tweet-body {
+    white-space: normal;
+  }
+}
+
 .tweet-date {
   color: #979797;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+@media (max-width: 1248px) {
+  .tweet-date {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
 }
 
 .twitter-logo {
@@ -986,11 +1071,27 @@ nav {
   top: -8.6rem;
 }
 
+@media (max-width: 1248px) {
+  .feed {
+    top: 2rem;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+  }
+}
+
 .feed2 {
   margin-right: 2rem;
   position: absolute;
   top: -12.6rem;
   left: 28rem;
+  display: block;
+}
+
+@media (max-width: 1248px) {
+  .feed2 {
+    display: none;
+  }
 }
 
 .u-align-center {

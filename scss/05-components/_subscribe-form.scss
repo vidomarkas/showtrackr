@@ -3,6 +3,10 @@
   width: 45rem;
   height: 5.3rem;
   box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+
+  @include maxw(1248) {
+    width: 34.3rem;
+  }
   &__label {
     position: absolute;
     left: 0.9rem;
