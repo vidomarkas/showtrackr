@@ -11,16 +11,15 @@
   }
   &-background {
     position: absolute;
-
     z-index: -1;
     &--1 {
-      top: -205px;
-      right: -582px;
+      top: 0;
+      right: 0;
 
       @include maxw(1084) {
-        top: 426px;
-        right: -501px;
-        transform: scale(0.6);
+        top: 640px;
+        right: -353px;
+        // transform: scale(0.6);
       }
     }
     &--2 {
@@ -56,6 +55,10 @@
     margin-top: 2.94rem;
     max-width: 47.1rem;
 
+    @include maxw(600) {
+      text-align: left;
+    }
+
     @include maxw(1084) {
       margin: 0 auto;
       margin-top: 2.94rem;
@@ -85,9 +88,18 @@
     opacity: 0.3;
     display: flex;
     padding: 0;
+    @include maxw(1084) {
+      justify-content: center;
+    }
   }
 
   &__icon {
     margin-right: 3.75rem;
+    @include maxw(600) {
+      margin-right: 3.058rem;
+    }
+    &--last {
+      margin-right: 0;
+    }
   }
 }

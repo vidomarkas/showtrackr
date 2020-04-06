@@ -32,9 +32,13 @@
 
   &-secondary {
     margin: 0;
-    line-height: 6rem;
-    font-size: 6.3rem;
+    line-height: 6.3rem;
+    font-size: 6rem;
     font-weight: 900;
+    @include maxw(600) {
+      line-height: 4rem;
+      font-size: 3.5rem;
+    }
   }
   &-tertiary {
     margin: 0;
@@ -63,7 +67,6 @@
 }
 
 .bigger-text {
-  margin: 0;
   line-height: 3.2rem;
   font-size: 2.1rem;
   font-weight: 300;

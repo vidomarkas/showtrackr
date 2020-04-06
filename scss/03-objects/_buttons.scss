@@ -2,6 +2,9 @@
   cursor: pointer;
   border: none;
   white-space: nowrap;
+  a {
+    color: #fff;
+  }
 
   &:hover {
     background-color: $btn-color-hover;

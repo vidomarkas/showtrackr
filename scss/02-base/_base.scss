@@ -20,7 +20,23 @@ ul {
   padding: 0;
 }
 
+section,
+header {
+  @include maxw(600) {
+    padding: 1.6rem;
+  }
+}
+
 .container {
+  width: 80%;
+  max-width: 110.8rem;
+  margin: 0 auto;
+
+  @include maxw(600) {
+    width: 100%;
+  }
+}
+.container-nav {
   width: 80%;
   max-width: 110.8rem;
   margin: 0 auto;
