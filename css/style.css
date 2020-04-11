@@ -687,6 +687,11 @@ nav {
   margin-top: 8.5rem;
 }
 
+.header-primary {
+  line-height: 7.2rem;
+  font-size: 7rem;
+}
+
 .header-secondary {
   margin-top: 2.94rem;
   max-width: 47.1rem;
